@@ -25,7 +25,7 @@ def submit():
             app.logger.info("message is epty")
 
      else:     
-           datastore_client = datastore.Client("vmwordpresssql")
+           datastore_client = datastore.Client([PROJECT-ID-GOESHERE])
            key = datastore_client.key('Topic')
            q_entity = datastore.Entity(key=key)
            q_entity["name"]=name
